@@ -24,19 +24,20 @@ export default function Home() {
     return (
         <main
             ref={ref}
-            className='flex h-full max-h-fit w-full flex-col text-primary'
+            className='flex h-full max-h-fit w-full min-w-[768px] flex-col text-primary'
         >
             <section className='relative h-[90dvh] w-full p-20'>
                 <motion.h1
-                    className='absolute bottom-[50px] left-20 z-10 select-none text-[224px] font-semibold leading-none'
+                    className='absolute bottom-[59px] left-20 z-10 select-none text-[150px] font-semibold leading-none lg:bottom-[50px] lg:text-[224px]'
                     style={{ y }}
                 >
                     Panowie
                 </motion.h1>
-                <div className='flex h-full w-full flex-row items-center justify-between'>
-                    <div className='mx-8 mb-12 flex w-full flex-col items-start justify-center'>
-                        <div className='ml-24 flex flex-col gap-6'>
-                            <h2 className='w-fit min-w-72 whitespace-pre-line text-[19px] font-medium leading-7'>
+                <div className='grid h-full w-full grid-cols-12'>
+                    <div className='hidden lg:col-span-1 lg:block'></div>
+                    <div className='col-span-5 flex w-full flex-col items-start justify-center lg:col-span-4'>
+                        <div className='mb-12 mr-2 flex flex-col gap-6'>
+                            <h2 className='whitespace-break-spaces text-[19px] font-medium leading-7'>
                                 We are Panowie Pro. <br />A software studio for
                                 creatives.
                             </h2>
@@ -47,7 +48,7 @@ export default function Home() {
                         src={DunePicture}
                         placeholder='blur'
                         alt='Picture of a sand dune with blue cloudless sky beyond.'
-                        className='relative h-screen max-h-full w-full object-cover'
+                        className='relative col-span-7 h-[calc(90dvh-160px)] w-full object-cover'
                         style={{
                             objectPosition,
                         }}
