@@ -21,7 +21,7 @@ export default function Button({
 
     return (
         <button
-            className='relative z-20 h-10 w-fit select-none overflow-hidden whitespace-nowrap rounded-xl bg-[#B06642] px-6 py-3 text-sm font-semibold leading-none text-white shadow-[0_4px_8px_0] shadow-[#00000008] outline-2 outline-offset-4 outline-orange-400 transition-all hover:shadow-none focus-visible:outline-2'
+            className='relative z-20 h-10 w-fit select-none overflow-hidden whitespace-nowrap rounded-xl bg-gradient-to-l from-[#F4B17E] to-[#B06642] px-6 py-3 text-sm font-semibold leading-none text-white shadow-[0_4px_8px_0] shadow-[#00000008] outline-2 outline-offset-4 outline-orange-400 transition-all hover:shadow-none focus-visible:outline-2'
             onMouseMove={handleMouseMove}
             {...props}
         >
