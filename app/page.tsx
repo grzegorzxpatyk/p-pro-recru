@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import DunePicture from '@/public/dune.jpg';
+import Button from '@/components/Button/Button';
 
 export default function Home() {
     return (
@@ -12,9 +13,7 @@ export default function Home() {
                                 We are Panowie Pro. <br />A software studio for
                                 creatives.
                             </h2>
-                            <button className='h-10 w-fit rounded-lg bg-orange-700 px-6 font-semibold text-white'>
-                                Work with us
-                            </button>
+                            <Button>Work with us</Button>
                         </div>
                         <h1 className='absolute bottom-[50px] left-20 z-10 select-none text-[224px] font-semibold leading-none'>
                             Panowie
