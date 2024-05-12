@@ -17,14 +17,14 @@ export default function Home() {
     const objectPosition = useTransform(
         scrollYProgress,
         [0, 1],
-        ['50% 50%', '50% 0%']
+        ['50% 10%', '50% 0%']
     );
     const y = useTransform(scrollYProgress, [0, 1], ['0', '-25%']);
 
     return (
         <main
             ref={ref}
-            className='text-primary flex h-full max-h-fit w-full flex-col'
+            className='flex h-full max-h-fit w-full flex-col text-primary'
         >
             <section className='relative h-[90dvh] w-full p-20'>
                 <motion.h1
@@ -48,12 +48,14 @@ export default function Home() {
                         placeholder='blur'
                         alt='Picture of a sand dune with blue cloudless sky beyond.'
                         className='relative h-screen max-h-full w-full object-cover'
-                        style={{ objectPosition }}
+                        style={{
+                            objectPosition,
+                        }}
                     />
                 </div>
             </section>
             <section className='h-screen w-full p-20 py-10'>
-                <div className='bg-placeholder h-full w-full rounded-lg'></div>
+                <div className='h-full w-full rounded-lg bg-placeholder'></div>
             </section>
         </main>
     );
