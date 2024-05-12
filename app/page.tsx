@@ -17,8 +17,8 @@ export default function Home() {
     const objectPosition = useTransform(
         scrollYProgress,
         [0, 1],
-        ['50% 10%', '50% 0%']
-    ).get();
+        ['50% 50%', '50% 0%']
+    );
     const y = useTransform(scrollYProgress, [0, 1], ['0', '-25%']);
 
     return (
