@@ -51,6 +51,7 @@ export default function Home() {
                     </div>
                     <MotionImage
                         src={DunePicture}
+                        placeholder='blur'
                         alt='Picture of a sand dune with blue cloudless sky beyond.'
                         className='relative h-screen max-h-full w-full object-cover'
                         style={{ objectPosition }}
