@@ -3,13 +3,7 @@
 import DunePicture from '@/public/dune.jpg';
 import Button from '@/components/Button/Button';
 import { MotionImage } from '@/components/MotionImage/MotionImage';
-import {
-    motion,
-    useScroll,
-    useTransform,
-    spring,
-    circOut,
-} from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 export default function Home() {
